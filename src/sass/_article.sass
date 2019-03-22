@@ -6,16 +6,18 @@
 	z-index: 2
 
 	p
-		max-width: 700px
 		font:
 			family: $georgia
 			size: 16px
 		color: #555
 		line-height: 1.6
 		margin-bottom: 25px
-		+links(maroon, underline)
+		
 		@media (max-width: $no-rail)
 			margin: 0 auto 25px auto
+		a
+			color: maroon
+			text-decoration: underline
 
 		&.reporter-email
 			font-family: $roboto
@@ -55,28 +57,17 @@
 
 		&:before
 			content: attr(data-dropcap)
-			// position: absolute
-			// z-index: 1
-			// top: 0
-			// right: 95%
-			// line-height: 90px
 			margin-top: -10px
 			font:
 				family: $prata
-				// size: 90px
 				size: 70px
 			color: maroon
 			line-height: 70px
-			// @media (max-width: 4023px)
 			position: static
 			float: left
 			padding-top: 4px
 			padding-right: 8px
 			padding-left: 3px
-
-		// &__replacee
-		// 	@media (max-width: 4023px)
-		// 		display: none
 
 	&__chapter-title
 		margin: 100px 0 20px 0
@@ -99,9 +90,19 @@
 				position: absolute
 				top: -3px
 				left: 50%
-				+size(100px 5px)
+				//+size(100px 5px)
+				width: 100px
+				height: 5px
 				background-color: $navy
 				transform: translateX(-50%)
+	&__subhead
+		padding: 10px 30px
+		font:
+			family: $prata
+			size: 24px
+		color: #333
+		text-align: center
+
 
 
 
@@ -127,9 +128,12 @@
 		font:
 			family: $roboto
 			size: 18px
-		+links(#999, none)
-		a:hover
-			color: maroon
+		//+links(#999, none)
+		a 
+		 color: #999
+		 text-decoration: none
+			:hover
+				color: maroon
 
 
 	&__source
@@ -219,7 +223,10 @@
 			margin: 5px 0
 			padding: 5px 0 5px 0
 			cursor: pointer
-			+links(#999, none)
+			//+links(#999, none)
+			a 
+				color: #999
+				text-decoration: none
 			&:hover, a:hover
 				color: #555
 
@@ -252,8 +259,10 @@
 			font:
 				family: $roboto
 				size: 18px
-
-			+links(maroon, underline)
+			a
+				color: maroon
+				text-decoration: underline
+			//+links(maroon, underline)
 
 
 	&--video
@@ -270,14 +279,16 @@
 			position: absolute
 			top: 0
 			left: 0
-			+size(100%)
+			//+size(100%)
+			width: 100%
+			height: 100%
 			border: 0
 	&--timeline
 		float: right
 		position: relative
 
 .media-package
-	+clearfix
+	clear: both
 	margin: 20px auto
 	padding: 20px 0
 	background-color: white
@@ -350,7 +361,7 @@
 .tl-more
 	max-height: 0px
 	overflow: hidden
-	@include transition( all 0.5s )
+	//@include transition( all 0.5s )
 	&.expanded
 		max-height: 200px
 
@@ -358,11 +369,11 @@
 	cursor: pointer
 	font-size: 20px
 	display: inline-block
-	@include transition-property(transform)
-	@include transition-duration(0.8s)
-	@include transition-delay(0.5s)
+	//@include transition-property(transform)
+	//@include transition-duration(0.8s)
+	//@include transition-delay(0.5s)
 	&.flipped
-		@include transform(rotate(180deg))
+		//@include transform(rotate(180deg))
 
 .arrow-right
 	position: absolute

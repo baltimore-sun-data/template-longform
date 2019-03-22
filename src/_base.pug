@@ -1,14 +1,8 @@
-mixin footer(credits)
-	footer.footer
-		section.footer__credits
-			ul
-				each credit in credits
-					li.label #{credit.role}
-					li #{credit.name}
-		section.footer__comments
-			include includes/comments.html
-		section.footer__logo
-			img(src="dist/images/baltimore-sun-logo-white.png" width="300")
+mixin creditList(credits)
+	ul
+		each credit in credits
+			li.label #{credit.role}
+			li #{credit.name}
 
 
 doctype html
@@ -74,21 +68,20 @@ html(class="no-js", lang="en")
 
 		include includes/ads/ad-for-body--leaderboard.html
 
-		//footer mixin
-		+footer([{'role': 'That Role','name': 'This Person'},{'role': 'This Role', 'name': 'That Person'}])
-
-
-
-
-
+		footer.footer
+			section.footer__credits
+				+creditList([{'role': 'That Role','name': 'This Person'},{'role': 'This Role', 'name': 'That Person'}])
+				+creditList([{'role': 'That Role','name': 'This Person'},{'role': 'This Role', 'name': 'That Person'}])
+			section.footer__comments
+				include includes/comments.html
+			section.footer__logo
+				img(src="dist/images/baltimore-sun-logo-white.png" width="300")
 
 
 		// Javascript
 
 		//Load jQuery CDN, fall back to local version if necessary		
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-		script.
-			window.jQuery || document.write('<script src="src/scripts/jquery-1.10.2.min.js">\x3C/script>')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
 		//Load the rest
 		//script(src="dist/min/javascript-min.js")

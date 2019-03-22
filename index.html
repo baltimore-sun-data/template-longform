@@ -113,9 +113,9 @@
     <div class="gallery" id="gallery">
       <div class="gallery__visible-photo">
         <div class="gallery__photos">
-          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg')"></div>
-          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg')"></div>
-          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg')"></div>
+          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg');"></div>
+          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg');"></div>
+          <div class="gallery__photo" style="background-image: url('dist/images/example.jpg');"></div>
         </div>
         <div class="gallery__caption"></div>
       </div>
@@ -158,11 +158,9 @@
         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
         <p>Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.</p>
         <!--large inline video-->
-        <div class="featured-video" id="featured-video">
-          <figure class="fv__video">
-            <iframe src="https://player.vimeo.com/video/143650587" width="100%" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </figure>
-        </div>
+        <figure class="inline-media inline-media--pic inline-media--full">
+          <iframe src="https://player.vimeo.com/video/143650587" width="100%" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </figure>
       </div>
     </div>
     <div class="container container--article">
@@ -211,31 +209,6 @@
           <div class="media-package__caption">Caption for multiphoto package</div>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <!--chart or interactive in sidebar-->
-        <figure class="inline-media inline-media--chart inline-media--small inline-media--has-title" data-sr>
-          <div class="inline-media__title">Chart			</div>
-<div class="pop-charts">
-
-	<div class="pop-charts__tabs">
-		<div class="pop-charts__tab is-selected" data-chart="0"> Chart 1 </div>
-		<div class="pop-charts__tab" data-chart="1"> Chart 2 </div>
-	</div>
-
-	<div class="pop-chart pop-chart--bmore is-visible">
-		<div class="pop-chart__title"> Chart 1 Title </div>
-		<canvas id="canvas4" height="350" width="350"></canvas>
-	</div>
-
-	<div class="pop-chart pop-chart--us">
-		<div class="pop-chart__title"> Chart 2 Title </div>
-		<canvas id="canvas3" height="350" width="350"></canvas>
-	</div>
-
-</div>
-
-<div class="inline-media__source inline-media--chart__source"> Source </div>
-
-        </figure>
         <p>Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales. Sed at dapibus justo. Donec tempus nec felis convallis consequat. </p>
         <p>Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.</p>
         <p>Sed viverra, libero a sagittis condimentum, dui sapien cursus mauris, a aliquet mi mauris ac augue.  Sed id ligula ac enim luctus euismod. Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.</p>
@@ -283,7 +256,7 @@
       </div>
     </div>
     <!--full-width interactive-->  <div class="container container--interactive">
-      <div class="mapSlide__title"> Full-width interactive </div>
+      <div class="article__subhead"> Full-width interactive </div>
       <div style="height:400px;max-width:1200px;background:#CCC;"></div>
     </div>
  
@@ -297,194 +270,6 @@
           <iframe src="https://player.vimeo.com/video/142890066?color=ffffff"></iframe>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <!--full-width video or photo grid-->
-    <!--This interactive is prefixed with "vg" for video grid-->
-    <div class="vg">
-      <div class="container container--interactive">
-        <div class="vg__header">Video or image grid</div>
-        <div class="vg__portraits">
-          <div class="vg__spotlight">
-            <div class="vg__spotlight__content">
-              <div class="vg__spotlight__video">
-                <iframe src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
-              </div>
-              <div class="vg__spotlight__info">
-                <div class="vg__spotlight__name"></div>
-                <div class="vg__spotlight__age">Age: <span></span></div>
-                <div class="vg__spotlight__country">Country of origin: <span></span></div>
-                <div class="vg__spotlight__language">Native language: <span></span></div>
-                <div class="vg__spotlight__btns">
-                  <div class="vg__spotlight__btn vg__spotlight__btn--other is-selected" data-src="">
-                    <div>in <span></span></div>
-                  </div>
-                  <div class="vg__spotlight__btn vg__spotlight__btn--english" data-src="">
-                    <div>in English</div>
-                  </div>
-                </div>
-                <div class="vg__spotlight__mobile-dropdown">
-                  <select>
-                    <option value="" disabled selected>Hear another voice:</option>
-                    <option value="exel-estrada">Exel Estrada / Spanish</option>
-                    <option value="carlotta">Carlotta / Italian</option>
-                    <option value="faraz-nadeem">Faraz Nadeem / Urdu</option>
-                    <option value="fayza-al-halabi">Fayza Al halabi / Arabic</option>
-                    <option value="franck-kibinda">Franck Kibinda / French</option>
-                    <option value="franklin-aguilar">Franklin Aguilar / Spanish</option>
-                    <option value="karen-abuel">Karen Abuel / Tagalog</option>
-                    <option value="kibra-buluts">Kibra Buluts / Tigrignya</option>
-                    <option value="maria-lourenco">Maria Lourenco / Portuguese</option>
-                    <option value="mona-al-halabi">Mona Al halabi / Arabic</option>
-                    <option value="monique-ngomba">Monique Ngomba / Sango</option>
-                    <option value="mussa-alenga">Mussa Alenga / Swahili</option>
-                    <option value="nan-wang">Nan Wang / Mandarin, Shangai dialect</option>
-                    <option value="nar-bahadur-darjee">Nar Bahadur Darjee / Nepali</option>
-                    <option value="narmin-aleethawi">Narmin Al Eethawi / Arabic</option>
-                    <option value="norma-argueta">Norma Argueta / Spanish</option>
-                    <option value="reema-alfaheed">Reema Alfaheed / Arabic</option>
-                    <option value="tina-lin">Tina Lin / Mandarin</option>
-                    <option value="vigueur-kibinda">Vigueur Kibinda / French</option>
-                    <option value="yonas-fishaye">Yonas Fishaye / Tigrignya/Amharic</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="1">
-            <div class="vg__portrait" data-kid="exel-estrada" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Exel Estrada</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="carlotta" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Carlotta</div>
-                <div class="vg__portrait__lang">Italian</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="faraz-nadeem" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Faraz Nadeem</div>
-                <div class="vg__portrait__lang">Urdu</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="fayza-al-halabi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Fayza Al halabi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="2">
-            <div class="vg__portrait" data-kid="franck-kibinda" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Franck Kibinda</div>
-                <div class="vg__portrait__lang">French</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="franklin-aguilar" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Franklin Aguilar</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="karen-abuel" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Karen Abuel</div>
-                <div class="vg__portrait__lang">Tagalog</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="kibra-buluts" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Kibra Buluts</div>
-                <div class="vg__portrait__lang">Tigrignya</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="3">
-            <div class="vg__portrait" data-kid="maria-lourenco" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Maria Lourenco</div>
-                <div class="vg__portrait__lang">Portuguese</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="mona-al-halabi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Mona Al halabi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="monique-ngomba" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Monique Ngomba</div>
-                <div class="vg__portrait__lang">Sango</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="mussa-alenga" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Mussa Alenga</div>
-                <div class="vg__portrait__lang">Swahili</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="4">
-            <div class="vg__portrait" data-kid="nan-wang" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Nan Wang</div>
-                <div class="vg__portrait__lang">Mandarin, Shangai dialect</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="nar-bahadur-darjee" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Nar Bahadur Darjee</div>
-                <div class="vg__portrait__lang">Nepali</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="narmin-aleethawi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Narmin Al Eethawi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="norma-argueta" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Norma Argueta</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="5">
-            <div class="vg__portrait" data-kid="reema-alfaheed" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Reema Alfaheed</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="tina-lin" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Tina Lin</div>
-                <div class="vg__portrait__lang">Mandarin</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="vigueur-kibinda" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Vigueur Kibinda</div>
-                <div class="vg__portrait__lang">French</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="yonas-fishaye" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Yonas Fishaye</div>
-                <div class="vg__portrait__lang">Tigrignya/Amharic</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="vg__expand-btn-container">
-          <div class="vg__expand-btn">Expand</div>
-        </div>
       </div>
     </div>
     <div class="container container--article">
@@ -528,9 +313,14 @@
 	<!-- End AdSlot 2 -->
 
 </div>
-    <!--footer mixin-->
     <footer class="footer">
       <section class="footer__credits">
+        <ul>
+          <li class="label">That Role</li>
+          <li>This Person</li>
+          <li class="label">This Role</li>
+          <li>That Person</li>
+        </ul>
         <ul>
           <li class="label">That Role</li>
           <li>This Person</li>
@@ -557,15 +347,11 @@
   <div class="fb-comments" data-href="#" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
 </div>
       </section>
-      <section class="footer__logo"><img src="dist/images/baltimore-sun-logo-white.png" width="300"/></section>
+      <section class="footer__logo"><img src="dist/images/baltimore-sun-logo-white.png" width="300"></section>
     </footer>
     <!-- Javascript-->
     <!--Load jQuery CDN, fall back to local version if necessary		-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="src/scripts/jquery-1.10.2.min.js">\x3C/script>')
-      
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Load the rest-->
     <!--script(src="dist/min/javascript-min.js")-->
     <script src="dist/min/app.min.js"></script>

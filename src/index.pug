@@ -38,9 +38,8 @@ block content
 				p Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.
 
 				//large inline video
-				#featured-video.featured-video
-					figure.fv__video
-						iframe(src="https://player.vimeo.com/video/143650587" width="100%" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+				figure.inline-media.inline-media--pic.inline-media--full
+					iframe(src="https://player.vimeo.com/video/143650587" width="100%" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
 		.container.container--article
 			.article
@@ -89,13 +88,6 @@ block content
 					.media-package__caption Caption for multiphoto package
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-				//chart or interactive in sidebar
-				figure.inline-media.inline-media--chart.inline-media--small.inline-media--has-title(data-sr)
-					.inline-media__title Chart			
-					include includes/interactives/bars.html
-					
 				p Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales. Sed at dapibus justo. Donec tempus nec felis convallis consequat. 
 				p Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.
 				p Sed viverra, libero a sagittis condimentum, dui sapien cursus mauris, a aliquet mi mauris ac augue.  Sed id ligula ac enim luctus euismod. Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.
@@ -154,10 +146,6 @@ block content
 					iframe(src="https://player.vimeo.com/video/142890066?color=ffffff")
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-		//full-width video or photo grid
-		include includes/interactives/video-grid.pug
 
 		.container.container--article
 			.article
